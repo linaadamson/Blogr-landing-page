@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Blogr</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header id="main-head">
+      <nav class="nav-bar">
+        <img src="images/logo.svg" alt="Blogr logo" class="logo" />
+
+        <div class="topnav">
+          <div class="nav-accordions">
+            <!-- Fist accordion -->
+            <div class="dropdown">
+              <button class="dropbtn">
+                Product
+                <i class="fa fa-angle-down fa-xs"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="#">Publish</a>
+                <a href="#">Design</a>
+                <a href="#">Tools</a>
+              </div>
+            </div>
+
+            <!-- Second Accordion -->
+            <div class="dropdown">
+              <button class="dropbtn">
+                Company
+                <i class="fa fa-angle-down fa-xs"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a>About Us</a>
+                <a>People</a>
+                <a href="#">Careers</a>
+              </div>
+            </div>
+
+            <!-- Third Accordion -->
+            <div class="dropdown">
+              <button class="dropbtn">
+                Connect
+                <i class="fa fa-angle-down fa-xs"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="#">Contact</a>
+                <a href="#">Newsletter</a>
+                <a href="#">LinkedIn</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-items">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+          </div>
+        </div>
+        <img class="icon" src="./images/icon-hamburger.svg" />
+      </nav>
+
+      <div class="hero-section">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        <div>
+          <a class="CTA-btn" href="#">Start for Free</a>
+          <a class="CTA-btn" href="#">Learn More</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- FIRST SECTION -->
+      <section class="feature-section editor-section">
+        <h2>Designed for the future</h2>
+        <div class="feature-flex">
+          <div class="feature-text">
+            <div class="text">
+              <h3>Introducing an extensible editor</h3>
+              <p>
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </p>
+            </div>
+            <div class="text">
+              <h3>Robust content management</h3>
+              <p>
+                Flexible content management enables users to easily move through
+                posts. Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With this functionality,
+                you’re in full control.
+              </p>
+            </div>
+          </div>
+          <div class="feature-image">
+            <picture>
+              <source
+                media="(max-width: 500px )"
+                srcset="images/illustration-editor-mobile.svg"
+                sizes=""
+              />
+              <img
+                class="feature-img"
+                src="images/illustration-editor-desktop.svg"
+                alt=""
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECOND SECTION -->
+      <section id="phone-section">
+        <div class="section-overflow">
+          <div class="circles">
+            <img
+              class="circle-img"
+              src="images/bg-pattern-circles.svg"
+              alt=""
+            />
+          </div>
+          <div class="phone-text text">
+            <h3>State of the Art Infrastructure</h3>
+            <p>
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+        </div>
+        <img class="phone-img" src="images/illustration-phones.svg" alt="" />
+      </section>
+
+      <section class="feature-section laptop-section">
+        <div class="feature-flex laptop-flex">
+          <div class="laptop-image">
+            <picture>
+              <source
+                media="(max-width: 500px )"
+                srcset="images/illustration-laptop-mobile.svg"
+                sizes=""
+              />
+              <img src="images/illustration-laptop-desktop.svg" alt="" />
+            </picture>
+          </div>
+          <div class="feature-text laptop-text">
+            <div class="text">
+              <h3>Free, open, simple</h3>
+              <p>
+                Blogr is a free and open source application backed by a large
+                community of helpful developers. It supports features such as
+                code syntax highlighting, RSS feeds, social media integration,
+                third-party commenting tools, and works seamlessly with Google
+                Analytics. The architecture is clean and is relatively easy to
+                learn.
+              </p>
+            </div>
+            <div class="text">
+              <h3>Powerful tooling</h3>
+              <p>
+                Batteries included. We built a simple and straightforward CLI
+                tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER SECTION -->
+      <footer>
+        <div class="footer-container">
+          <img
+            src="images/logo.svg"
+            alt="Blogr logo"
+            class="logo footer-logo"
+          />
+          <ul class="product">
+            <li>Product</li>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </ul>
+          <ul class="company">
+            <li>Company</li>
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </ul>
+          <ul class="connect">
+            <li>Connect</li>
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+
+    <!-- FONT AWESOME CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
+      integrity="sha512-fzff82+8pzHnwA1mQ0dzz9/E0B+ZRizq08yZfya66INZBz86qKTCt9MLU0NCNIgaMJCgeyhujhasnFUsYMsi0Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- <div class="attribution">
+  Challenge by
+  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+  >. Coded by <a href="#">Your Name Here</a>.
+</div> -->
